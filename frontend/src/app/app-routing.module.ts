@@ -1,16 +1,11 @@
 import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
-import { LoginComponent } from './login/login.component';
-import { AppComponent } from './app.component';
-import { NotfoundComponent } from './notfound/notfound.component';
-import { WelcomeComponent } from './welcome/welcome.component';
-
+import { LandingComponent } from './pages/landing/landing.component';
+import { AuthenticateComponent } from './pages/authenticate/authenticate.component';
 
 const routes: Routes = [
-  {path: '', component: AppComponent},
-  {path: 'login', component: LoginComponent},
-  {path: 'welcome/:name', component: WelcomeComponent},
-  {path: '**', component:  NotfoundComponent}
+  { path: '', component: LandingComponent},
+  { path: 'authenticate', component: AuthenticateComponent},
 ];
 
 @NgModule({

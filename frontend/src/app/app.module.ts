@@ -1,24 +1,24 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
-import { FormsModule } from '@angular/forms';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-import { LoginComponent } from './login/login.component';
-import { NotfoundComponent } from './notfound/notfound.component';
-import { WelcomeComponent } from './welcome/welcome.component';
+import { MenuComponent } from './components/menu/menu.component';
+import { FooterComponent } from './components/footer/footer.component';
+import { LandingComponent } from './pages/landing/landing.component';
+import { AuthenticateComponent } from './pages/authenticate/authenticate.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    LoginComponent,
-    NotfoundComponent,
-    WelcomeComponent
+    MenuComponent,
+    FooterComponent,
+    LandingComponent,
+    AuthenticateComponent,
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule,
-    FormsModule
+    AppRoutingModule
   ],
   providers: [],
   bootstrap: [AppComponent]
