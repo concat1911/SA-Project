@@ -1,0 +1,14 @@
+<div>
+  <div>{{status}}</div>
+  <div>
+    <span>Username:</span>
+    <input type="text" name="username" [(ngModel)]="username"/>
+  </div>
+
+  <div>
+    <span>Password:</span>
+    <input type="password" name="password" [(ngModel)]="password"/>
+  </div>
+
+  <button (click)=onLogin()>Login</button>
+</div>
