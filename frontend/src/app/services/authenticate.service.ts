@@ -7,11 +7,16 @@ export class AuthenticateService {
 
   constructor() { }
 
-  checkLogin(username, password){
-    if(username === 'linhtinh' && password === '12345'){
+  checkLogin(email, password){
+    if(email === 'linhtinh' && password === '12345'){
       return true
     }else{
       return false
     }
+  }
+
+  checkAlreadyLogin(){
+    let user = sessionStorage.getItem('authenticatedUser')
+    return !(user === null) 
   }
 }

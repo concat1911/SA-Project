@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { AuthenticateService } from 'src/app/services/authenticate.service';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-menu',
@@ -6,10 +8,14 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./menu.component.scss']
 })
 export class MenuComponent implements OnInit {
-
-  constructor() { }
+  islogin = false
+  constructor(private authService: AuthenticateService) { }
 
   ngOnInit() {
+    if(this.authService.checkAlreadyLogin()) this.islogin = true
   }
 
+  handleLogout(){
+    sessionStorage.removeItem('authenticatedUser')
+  }
 }
