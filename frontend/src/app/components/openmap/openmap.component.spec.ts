@@ -1,19 +1,20 @@
 import { async, ComponentFixture, TestBed } from '@angular/core/testing';
-import { LandingComponent } from './landing.component';
 
-describe('LandingComponent', () => {
-  let component: LandingComponent;
-  let fixture: ComponentFixture<LandingComponent>;
+import { OpenmapComponent } from './openmap.component';
+
+describe('OpenmapComponent', () => {
+  let component: OpenmapComponent;
+  let fixture: ComponentFixture<OpenmapComponent>;
 
   beforeEach(async(() => {
     TestBed.configureTestingModule({
-      declarations: [ LandingComponent ]
+      declarations: [ OpenmapComponent ]
     })
     .compileComponents();
   }));
 
   beforeEach(() => {
-    fixture = TestBed.createComponent(LandingComponent);
+    fixture = TestBed.createComponent(OpenmapComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });

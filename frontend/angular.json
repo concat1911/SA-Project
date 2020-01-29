@@ -28,9 +28,13 @@
               "src/assets"
             ],
             "styles": [
-              "src/styles.scss"
+              "src/styles.scss",
+              "src/assets/leaflet/leaflet.css",
+              "./node_modules/leaflet-routing-machine/dist/leaflet-routing-machine.css"
             ],
-            "scripts": []
+            "scripts": [
+              "src/assets/leaflet/leaflet.js"
+            ]
           },
           "configurations": {
             "production": {

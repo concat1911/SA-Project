@@ -8,7 +8,7 @@ import { RouteGuardService } from './services/route-guard.service';
 const routes: Routes = [
   { path: '', component: LandingComponent},
   { path: 'authenticate', component: AuthenticateComponent},
-  { path: 'welcome/:name', component: WelcomeComponent, canActivate:[RouteGuardService]}
+  { path: 'welcome', component: WelcomeComponent, canActivate:[RouteGuardService]}
 ];
 
 @NgModule({

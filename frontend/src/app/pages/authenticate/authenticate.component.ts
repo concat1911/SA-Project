@@ -20,7 +20,7 @@ export class AuthenticateComponent implements OnInit {
   handleLogin(){
     if(this.authService.checkLogin(this.email, this.password)){
       sessionStorage.setItem('authenticatedUser', this.email)
-      this.router.navigate(['welcome', this.email])
+      this.router.navigate(['welcome'])
     }else{
       this.status = 'Invalid Credentials'
     }

@@ -2,16 +2,12 @@ import { Component, OnInit } from '@angular/core';
 declare let L;
 
 import '../../../../node_modules/leaflet-routing-machine/dist/leaflet-routing-machine.js'
-
 @Component({
-  selector: 'app-landing',
-  templateUrl: './landing.component.html',
-  styleUrls: ['./landing.component.scss']
+  selector: 'app-openmap',
+  templateUrl: './openmap.component.html',
+  styleUrls: ['./openmap.component.scss']
 })
-export class LandingComponent implements OnInit {
-  lat = 51.5643
-  long = 7.345
-
+export class OpenmapComponent implements OnInit {
   constructor() { }
 
   ngOnInit() {

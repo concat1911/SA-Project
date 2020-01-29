@@ -1,0 +1,80 @@
+.carousel-item{
+  img{
+    height: 100vh;
+    object-fit: cover;
+  }
+}
+
+#map {
+  height: 800px;
+  width: 100%;
+}
+
+.section{
+	min-height: 600px;
+	padding: 3rem 0;
+  overflow: hidden;
+  position: relative;
+  padding: 90px 10px 90px;
+
+  &:nth-child(even) {
+    background-color: #e9ecef;
+  }
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+#products{
+  background-image: url("https://images.unsplash.com/photo-1576235974207-75671367aefd?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1349&q=80");
+}
+
+#contact{
+  background-image: url("https://images.unsplash.com/photo-1576235974620-d263d5343380?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1349&q=80");
+
+  h1{
+    color: white;
+    font-weight: bold ;
+  }
+  form{
+    background-color: whitesmoke;
+    border-radius: 10px;
+    padding: 20px;
+  }
+}
+
+// .card{
+//   margin: 0 0 2em;
+//   background: #fff;
+//   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.4);
+//   border-bottom: 1px solid #DFDFDF;
+//   border-radius: 2px;
+//   overflow: hidden;
+//   -webkit-transform: translate3d(0px, 0px, 0px);
+//   transition: all 0.3s ease-out;
+//   cursor: pointer;
+
+//   .card-img-top{
+//     width: 100%;
+//     border-radius: 0px;
+//     display: block;
+//     max-height: 270px;
+//     overflow: hidden;
+//   }
+
+//   &:hover{
+//     box-shadow: 0 6px 20px #AFAFAF;
+//   }
+// }
+
+.jumbotron{
+  margin: 0px;
+}
+
+@media only screen and (max-device-width: 1366px) {
+  .section {
+    // background-attachment: scroll;
+  }
+}
+
